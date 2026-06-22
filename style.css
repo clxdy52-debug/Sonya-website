@@ -755,7 +755,7 @@ main {
         text-align: center;
     }
 
-   .invite-icon {
+    .invite-icon {
         width: 200px;
         height: 200px;
         max-width: 100%;
@@ -767,29 +767,80 @@ main {
     }
 
     .setup-list p {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    border-bottom: 1px solid rgba(255,255,255,.08);
-    padding: 15px 0;
-    margin: 0;
-   }
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        padding: 15px 0;
+        margin: 0;
+    }
 
     .setup-list b {
-    width: 28px;
-    height: 28px;
-    border: 2px solid var(--hot);
-    border-radius: 50%;
-    color: var(--hot);
-    display: grid;
-    place-items: center;
-    font-size: 15px;
+        width: 28px;
+        height: 28px;
+        border: 2px solid var(--hot);
+        border-radius: 50%;
+        color: var(--hot);
+        display: grid;
+        place-items: center;
+        font-size: 15px;
    }
 
-   .setup-list span {
-    color: white;
-    font-size: 18px;
+    .setup-list span {
+        color: white;
+        font-size: 18px;
    }
 
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+    }
 
+    main {
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .top-grid,
+    .bottom-grid,
+    .systems-grid,
+    .preview-grid,
+    .stats-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .panel,
+    .mini-panel,
+    .system-card,
+    .stat-card {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .command-list p,
+    .setup-list p {
+        font-size: 18px;
+    }
+
+    .quote {
+        font-size: 34px;
+    }
+
+    .section-head h1 {
+        font-size: 44px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }
